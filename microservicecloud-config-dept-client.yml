@@ -32,8 +32,8 @@ spring:
 eureka:
      client: #客户端注册进eureka服务列表内
           service-url:
-               #defaultZone: http://localhost:7001/eureka #单机版 服务注册
-                defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #集群版服务注册
+               defaultZone: http://localhost:7001/eureka #单机版 服务注册
+                #defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #集群版服务注册
 
      instance: #监控中心的配置显示
            instance-id: microservicecloud-dept8001  # 自定义服务名称信息
@@ -62,7 +62,7 @@ spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource        #当前数据源操作类
         driver-class-name: com.mysql.jdbc.Driver            #mysql驱动包 com.mysql.jdbc.Driver
-        url: jdbc:mysql://127.0.0.1:3306/cloud02?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true&amp;allowMultiQueries=true&amp;useSSL=false&amp;serverTimezone=GMT%2B8	#数据库名
+        url: jdbc:mysql://127.0.0.1:3306/cloud01?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true&amp;allowMultiQueries=true&amp;useSSL=false&amp;serverTimezone=GMT%2B8	#数据库名
         username: root
         password:
         dbcp2:
@@ -75,8 +75,8 @@ spring:
 eureka:
      client: #客户端注册进eureka服务列表内
           service-url:
-               #defaultZone: http://localhost:7001/eureka #单机版 服务注册
-                defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #集群版服务注册
+               defaultZone: http://localhost:7001/eureka #单机版 服务注册
+                #defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #集群版服务注册
 
      instance: #监控中心的配置显示
            instance-id: microservicecloud-dept8001  # 自定义服务名称信息
